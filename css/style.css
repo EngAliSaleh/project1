@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Anek Latin", sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/* <!-- start main-header -->*/
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 60px;
+    /* <!--  بخلي الهيدر يضل ثابت ما فكل الموقع --> */
+    position: fixed;
+    /* <!--  بخلي الهيدر يضل ثابت ما فكل الموقع --> */
+    /* <!--  بتخلي الهيدر هوا الي يكون فوق اي محتوى فالصفحة يضل هوا الي ظاهر دائما  --> */
+    z-index: 999;
+    /* <!--  بتخلي الهيدر هوا الي يكون فوق اي محتوى فالصفحة يضل هوا الي ظاهر دائما  --> */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* هادي جتكون ثابتة في جميع محتويات الموقع  */
+    padding: 10px 200px;
+    /* هادي جتكون ثابتة في جميع محتويات الموقع  */
+
+}
+
+.logo {
+
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    box-shadow: 5px 10px rgba(112, 1, 1, 0.897);
+}
+
+.navegation a {
+    color: white;
+    text-decoration: none;
+    font-size: 17.6px;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navegation a:hover {
+    color: darkred;
+}
+
+/*<!-- end main-header --> */
+
+
+
+
+
+
+
+
+/* <!-- start main-header -->*/
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    /* <!-- اقل ارتفاع هوا 100 بحيث انه مهما انضاف عناصر جوا المحتوى حيتناسب تلقائي مع الارتفاع--> */
+    min-height: 100vh;
+    /* <!-- اقل ارتفاع هوا 100 بحيث انه مهما انضاف عناصر جوا المحتوى حيتناسب تلقائي مع الارتفاع--> */
+    display: flex;
+    align-items: center;
+    background: url(../imeges/main--header.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: antiquewhite;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.main h2 span {
+    display: inline-block;
+    color: darkred;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+
+    color: white;
+    background-color: darkred;
+    padding: 10px 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    box-shadow: 5px 10px rgba(105, 102, 102, 0.897);
+}
+
+.main-btn:hover {
+    color: white;
+    background-color: rgb(126, 2, 2);
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+
+
+
+
+
+.social-media-list{
+    display: flex;
+
+}
+
+.social-media-list a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 26px;
+    text-decoration: none;
+    color: #fff;    
+    position: relative;
+    z-index: 1; overflow: hidden;
+}
+
+.social-media-list a:not(:last-child){
+
+    margin-right: 2rem; 
+}
+
+.social-media-list a i {
+    transition: transform 0.3s;
+}
+.social-media-list a::before {
+    content: "";
+    position: absolute;
+    width: 115%;
+    height: 115%;
+    background-color: darkred;
+    z-index: -1;
+    transform: rotate(45deg);
+    top: -15%;
+    left: 5%;
+    transition: transform 0.3s;
+
+}
+.social-media-list a:hover {
+    color: #f32424;
+}
+
+.social-media-list a:hover i {
+    transform: scale(1.2);
+
+}
+.social-media-list a:hover::before{
+    transform: rotate(45deg) translate(15%,-100%);
+}
+
+/* <!-- end main-header --> /*
+
+
+
+
+
+
+
+
+
+
+/* <!-- start services --> */
+
+.tittle {
+    display: flex;
+    justify-content: center;
+    color: darkred;
+    font-size: 35.2px;
+    font-weight: 1000;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row
+}
+
+.card {
+    background-color: white;
+    width: 380px;
+    box-shadow: 0 5px 25px rgba(1 1 1/50%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: darkred;
+    font-size: 100px;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: darkred;
+    font-size: 19.2px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* <!-- end services --> */
+
+
+
+
+
+
+
+
+/*<!-- start projects -->*/
+.projects {
+    background-color: rgb(29, 29, 29);
+}
+
+.projects .content {
+        
+    width: 120%;
+    margin: 30px 0 0 -70px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.project-card {
+    
+    background-color: white;
+    border: 1px solid white;
+    min-height: 224px;
+    width: 25%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-img {
+    opacity: 0.9;
+}
+
+.project-img img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 16px;
+}
+
+.project-category {
+    font-size: 12.8px;
+    color: darkred;
+    font-weight: 600;
+
+}
+
+.project-tittle {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+
+}
+
+.more-details {
+    text-decoration: none;
+    color: darkred;
+
+}
+
+/*<!-- end projects -->*/
+
+/*<!-- start content -->*/
+
+
+.cards-contacts .icon {
+    font-size: 70px;
+
+}
+
+.cards-contacts .info p {
+    font-size: 24px;
+}
+
+/*<!-- end  content -->*/
+
+
+/*<!--start footer -->*/
+
+.footer {
+    background-color: rgb(29, 29, 29);
+    color: #fff;
+    padding: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-tittle {
+    font-size: 20.8px;
+    font-weight: 600;
+
+
+}
+
+.footer-tittle span {
+    color: darkred;
+
+
+}
+
+.footer .social-media-list a {
+    font-size:20px;
+    width: 40px;
+    height: 40px;
+}
+
+/*<!-- end  footer -->*/
+
+
+/* resposive */
+
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navegation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 28.8px;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 16px;
+    }
+
+    .main-content h3 {
+        font-size: 25.6px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font: size 12.8px;
+        ;
+    }
+
+    .main-content h3 {
+        font-size: 22.4px;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+
+    }
+}
+
+/* resposive */
